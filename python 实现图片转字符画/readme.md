@@ -1,12 +1,6 @@
-### 先上效果
-
-![](http://po4tl1gtx.bkt.clouddn.com/FjZG3mUciv4NVtyXkrJhQPd_z-S7)
-
 这是一个通过 python 实现图片转字符画的小项目, 合适新手练手. 主要通过调用 PIL(Python Imaging Library) 模块实现对图片的操作. 
 
 关于 PIL 的详细信息可以参考官方文档(http://effbot.org/imagingbook/).
-
-![](http://po4tl1gtx.bkt.clouddn.com/Fq8SkapA9b3uTUkTmtXtS5P_N5D7)
 
 ### 实现思路
 
@@ -41,9 +35,3 @@ python_file = image_file("L".convert)
 ```python
 gray = int(r* 0.299+g* 0.587+b* 0.114)
 ```
-
-### 效果对比
-
-两种灰度化的方式哪一个更好一些呢?
-
-![](http://po4tl1gtx.bkt.clouddn.com/FtlbcDWs6Baw5ARycUOkSElfrp_z)
