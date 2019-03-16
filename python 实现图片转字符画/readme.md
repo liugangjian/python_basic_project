@@ -19,6 +19,22 @@ codePic = ''
 codePic = codePic + codeLib[int(((count-1)*gray)/256)]
 ```
 
+映射关系不止这一种方式，补充几个小Tips:
+1. 可以选取以字符集的长度为周期循环映射的方式
+
+```python
+codePic = codePic + codeLib[int(gray/count)]
+```
+
+2. 可调整像素范围，如多少像素以内可对应统一字符
+
+<div class="output_wrapper" id="output_wrapper_id" style="font-size: 16px; color: rgb(86, 86, 86); line-height: 1.6; word-spacing: 0px; letter-spacing: 0px; font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.5em 0px;"><span class="katex-display" style="display: block; text-align: center; color: inherit; line-height: inherit; margin: 0px; padding: 0px; font-size: 1.22em;"><span class="katex" style="font: 1.21em/1.2 KaTeX_Main, 'Times New Roman', serif; text-indent: 0px; text-rendering: auto; font-size: inherit; color: inherit; line-height: inherit; margin: 0px; white-space: nowrap; display: inline-block; text-align: center; padding: 3px;"><img src="http://po4tl1gtx.bkt.clouddn.com/FgHbXIQs5m5LU-5xlWeg6I_G8gUk" style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px auto; max-width: 100%; display: inline-block; vertical-align: middle;"></span></span></p></div>
+
+其中, z表示字符集中字符数目; x表示当前灰度值; y表示取整后的常数. 
+
+对应于我们代码中的映射规则，解的当z=25时，10 个像素差范围内的点都用同一个字符表示.
+
+
 #### image灰度化有两种方式:
 1. 直接使用内置的方法
 
