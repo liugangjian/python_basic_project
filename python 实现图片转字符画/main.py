@@ -25,12 +25,12 @@ def transform2(image_file):
         codePic = codePic+'\r\n'
     return codePic
 
+if __name__ == "__main__":
+    fp = open(u'1.jpg','rb') # 目标图片的位置
+    image_file = Image.open(fp)
+    image_file=image_file.resize((int(image_file.size[0]*0.75), int(image_file.size[1]*0.5)))# 调整图片大小
+    print u'Info:',image_file.size[0],' ',image_file.size[1],' ',count
 
-fp = open(u'1.jpg','rb') # 目标图片的位置
-image_file = Image.open(fp)
-image_file=image_file.resize((int(image_file.size[0]*0.75), int(image_file.size[1]*0.5)))# 调整图片大小
-print u'Info:',image_file.size[0],' ',image_file.size[1],' ',count
-
-tmp = open('out.txt','w')
-tmp.write(transform1(image_file))
-tmp.close()
+    tmp = open('out.txt','w')
+    tmp.write(transform1(image_file))
+    tmp.close()
