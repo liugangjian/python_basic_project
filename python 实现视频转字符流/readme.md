@@ -1,5 +1,5 @@
 #### 原视频为badapple
-访问连接：(https://www.bilibili.com/video/av2952252from=search&seid=11115787292706866762)
+访问链接：(https://www.bilibili.com/video/av2952252from=search&seid=11115787292706866762)
 
 #### 转换后视频如下
 ![](http://po4tl1gtx.bkt.clouddn.com/Fk_dcjlRJtDCNv3m4b2CG0rLERSm)
