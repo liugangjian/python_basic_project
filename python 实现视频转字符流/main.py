@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# 编译环境：spyder + opencv + anaconda python 3.5
 import cv2
 import os
 import time
